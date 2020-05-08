@@ -4,8 +4,8 @@
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
-    "ucdn": "^0.10.0",
-    "ucompress": "^0.14.0"
+    "ucdn": "latest",
+    "ucompress": "latest"
   },
   "scripts": {
     "help:cdn": "ucdn --help",
