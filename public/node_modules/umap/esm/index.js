@@ -1,0 +1,1 @@
+export default e=>({get:t=>e.get(t),set:(t,g)=>(e.set(t,g),g)});

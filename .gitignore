@@ -1,5 +1,6 @@
-cdn/
 node_modules/
+!public/node_modules
+cdn/
 src/node_modules/
 package-lock.json
 src/package-lock.json
