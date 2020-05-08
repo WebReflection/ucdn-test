@@ -13,7 +13,7 @@ addEventListener(
     `);
 
     // fetch project details and populate the footer
-    fetch('../package.json')
+    fetch('package.json')
       .then(_ => _.json())
       .then(({description, version}) => {
         render(document.querySelector('footer'), html`
