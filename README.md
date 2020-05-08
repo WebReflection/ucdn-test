@@ -1,6 +1,8 @@
 # [µcompress](https://github.com/WebReflection/ucompress#readme) and [µcdn](https://github.com/WebReflection/ucdn#readme) basic example
 
-How to test this project:
+**[Live demo](https://webreflection.github.io/ucdn-test/public/)**
+
+### How to test this project
 
 ```sh
 git clone https://github.com/WebReflection/ucdn-test.git
@@ -8,7 +10,7 @@ cd ucdn-test
 npm i
 ```
 
-How to build a `./public` folder with optimized assets:
+### How to build a `./public` folder with optimized assets
 ```
 npm run build
 ```
@@ -27,4 +29,4 @@ To discover all flags available in both _ucdn_ and _ucompress_, feel free to run
 
 ## Where are dependencies?
 
-While backend/processing dependencies should be defined in this project root, all front-end related dependencies should be defined in the `./src/package.json` file. This is necessary in order to pre-resolve paths within the root of the front-end folder, but don't worry, only files related to the project will be optimized, once published, and _JS_ files will automatically resolve to those dependencies as absolute path, i.e. `/node_modules/uhtml/esm/index.js`.
+While backend/processing dependencies should be defined in this project root, all front-end related dependencies should be defined in the `./src/package.json` file. This is necessary in order to pre-resolve paths within the root of the front-end folder, but don't worry, only files related to the project will be optimized, once published, and _JS_ files will automatically resolve to those dependencies as relative path, i.e. `../node_modules/uhtml/esm/index.js`.
