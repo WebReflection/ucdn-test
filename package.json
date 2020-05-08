@@ -12,6 +12,6 @@
     "help:compress": "ucompress --help",
     "build": "ucompress --source ./src --dest ./public && rm -rf public/package-lock.json",
     "test": "ucdn --port 8080 --source ./src --dest ./cdn --cache-timeout 1000",
-    "postinstall": "mkdir -p src/node_modules && cd src && npm i && npm test"
+    "postinstall": "mkdir -p src/node_modules && cd src && npm i && cd .. && npm test"
   }
 }
