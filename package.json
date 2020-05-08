@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "ucdn-test",
+  "author": "Andrea Giammarchi",
+  "license": "ISC",
+  "devDependencies": {
+    "ucdn": "^0.10.0",
+    "ucompress": "^0.13.0"
+  },
+  "scripts": {
+    "build": "ucompress --source ./src --dest ./public && rm -rf public/package-lock.json",
+    "test": "ucdn --port 8080 --source ./src --dest ./cdn --cache-timeout 1000",
+    "postinstall": "mkdir -p src/node_modules && cd src && npm i && npm test"
+  }
+}

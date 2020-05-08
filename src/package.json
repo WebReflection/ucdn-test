@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "description": "My Counter",
+  "version": "1.0.0",
+  "dependencies": {
+    "uce": "^0.10.2",
+    "uhtml": "^1.11.5"
+  }
+}
