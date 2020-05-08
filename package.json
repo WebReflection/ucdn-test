@@ -5,7 +5,7 @@
   "license": "ISC",
   "devDependencies": {
     "ucdn": "^0.10.0",
-    "ucompress": "^0.13.0"
+    "ucompress": "^0.14.0"
   },
   "scripts": {
     "help:cdn": "ucdn --help",
