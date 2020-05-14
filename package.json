@@ -14,6 +14,6 @@
     "test": "ucdn --port 8080 --source ./src --dest ./cdn --cache-timeout 1000 --with-source-map --verbose",
     "test:forks": "ucdn --forks 128 --port 8080 --source ./src --dest ./cdn --cache-timeout 1000 --with-source-map --verbose",
     "test:perf": "ucdn --forks 128 --port 8080 --source ./src --dest ./cdn",
-    "postinstall": "mkdir -p src/node_modules && cd src && npm i && cd .. && npm test"
+    "postinstall": "cd src && npm i && cd .. && npm test"
   }
 }
