@@ -1,0 +1,1 @@
+const{isArray:r}=Array,{indexOf:e,slice:i}=[];export{r as isArray,e as indexOf,i as slice};
